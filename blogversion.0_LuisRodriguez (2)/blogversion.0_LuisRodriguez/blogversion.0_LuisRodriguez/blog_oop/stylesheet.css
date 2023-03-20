@@ -1,0 +1,225 @@
+@import url("http://yui.yahooapis.com/2.8.1/build/reset/reset-min.css"); /* YUI CSS Reset */
+
+body {
+	width: 100%;
+	text-align: center;
+	font-family: "Tahoma", "Geneva", sans-serif;
+}
+
+a { text-decoration: none; }
+
+#header, #main, #footer {
+	margin: 0 auto;
+	width: 60em;
+	clear: both;
+}
+
+#header {
+	margin-top: 1em;
+	height: 10em;
+	-moz-box-shadow: 0px -2px 10px black inset;
+	-webkit-box-shadow: 0px -2px 10px black inset;
+	box-shadow: 0px -2px 10px black inset;
+}
+
+	#header h1 {
+		padding: 0.2em;
+		font-family: "Impact", "Charcoal", sans-serif;
+		font-size: 3em;
+		font-weight: bold;
+		letter-spacing: 0.15em;
+		text-shadow: 1px 1px 5px white, -1px 1px 5px white, 1px -1px 5px white, -1px -1px 5px white;
+	}
+
+	#header ul.menu {
+		list-style: none;
+		width: 19.2em;
+		margin: 0 auto;
+		clear: both;
+		margin-bottom: 2em;
+	}
+
+	#header ul.menu li {
+		float: left;
+		margin: 0 0.2em;
+	}
+
+	#header ul.menu li a {
+		display: block;
+		height: 1.5em;
+		line-height: 1.25em;
+		float: left;
+		width: 6em;
+		text-align: center;
+		border-radius: 1em;
+		-moz-border-radius: 1em;
+		-webkit-border-radius: 1em;
+		box-shadow: -2px 2px 5px black;
+		-moz-box-shadow: -2px 2px 5px black;
+		-webkit-box-shadow: -2px 2px 5px black;
+	}
+
+	#header ul.menu li a:hover {
+		box-shadow: -2px 2px 5px black inset;
+		-moz-box-shadow: -2px 2px 5px black inset;
+		-webkit-box-shadow: -2px 2px 5px black inset;
+	}
+
+#main {
+	padding: 1em;
+	min-height: 30em;
+}
+
+	#main h2{
+		font-family: "Impact", "Charcoal", sans-serif;
+		font-size: 2em;
+		letter-spacing: 0.15em;
+		font-variant: small-caps;
+		text-shadow: -3px 3px 10px #949396, 3px 3px 10px #949396;
+		-moz-text-shadow: -3px 3px 10px #949396, 3px 3px 10px #949396;
+		-webkit-text-shadow: -3px 3px 10px #949396, 3px 3px 10px #949396;
+	}
+	
+	#main #byline, #main #entrybody, #main #comments, #main #prev, #main #addcomment {
+		padding: 1em;
+		margin: 0 auto;
+		width: 45em;
+	}
+	
+	#main #byline, #main .commenthead {
+		font-style: italic;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		-moz-border-radius: 1em 1em 0 0;
+		-webkit-border-radius: 1em 1em 0 0;
+		border-radius: 1em 1em 0 0;
+	}
+	
+	#main #byline #edit {
+		display: block;
+		margin: 0.1em auto;
+		font-style: normal;
+		width: 4em;
+		text-align: center;
+		border-radius: 1em;
+		-moz-border-radius: 1em;
+		-webkit-border-radius: 1em;
+		box-shadow: -2px 2px 5px black;
+		-moz-box-shadow: -2px 2px 5px black;
+		-webkit-box-shadow: -2px 2px 5px black;
+	}
+	
+	#main #entrybody {
+		line-height: 1.2;
+		text-align: left;
+		text-indent: 2em;
+	}
+	
+	#main #comments {
+		padding: 1em;
+	}
+	
+	#main #comments .commentbody {
+		-moz-border-radius: 0 0 1em 1em;
+		-webkit-border-radius: 0 0 1em 1em;
+		border-radius: 0 0 1em 1em;
+		padding: 0.5em 0;
+		margin-bottom: 0.5em;
+		border-top: 1px dotted black;
+	}
+	
+	#main #prev, #main #addcomment {
+		border-top: 1px dotted black;
+		-moz-border-radius: 0 0 1em 1em;
+		-webkit-border-radius: 0 0 1em 1em;
+		border-radius: 0 0 1em 1em;
+	}
+	
+	#main #prev:before {
+		content: "Previous Posts";
+		text-decoration: underline;
+	}
+	
+	#main #prev ul {
+		text-align: left;
+		font-style: italic;
+		padding-left: 10em;
+	}
+	
+	#main #prev ul li {
+		list-style-type: square;
+	}
+
+	#main form {
+		margin: 0 auto;
+		width: 50%;
+		text-align: left;
+		padding: 2em;
+	}
+	
+	#main form input, #main form textarea, #main form select {
+		margin: 0.1em 0.5em;
+	}
+	
+#footer {
+	height: 3em;
+	padding: 0.6em 0 0.1em 0;
+	text-align: center;
+	font-family: "Tahoma", "Geneva", sans-serif;
+	-moz-box-shadow: 0px 2px 10px black inset;
+	-webkit-box-shadow: 0px 2px 10px black inset;
+	box-shadow: 0px 2px 10px black inset;
+}
+
+/* COLORS */
+
+html {
+	background-color: #033E3E;
+}
+
+#header {
+	background-color: #B22222;
+}
+
+	#header ul.menu li a, #header ul.menu li a:visited, #main #byline #edit {
+		color: black;
+		background-color: #7C7C8D;
+	}
+
+	#header ul.menu li a:hover, #main #byline #edit:hover {
+		color: #E2DECF;
+		background-color: #4C4B63;
+	}
+
+#main {
+	background-color: #F8F4E3;
+	color: black;
+}
+
+	#main a {
+		color: black;
+	}
+
+	#main h2 a:hover {
+		color: #0B3954;
+	}
+
+	#main a:hover {
+		color: #E2DECF;
+	}
+
+	#main #entrybody, #main #comments .commenthead {
+		background-color: #D4CDC3;
+	}
+	
+	#main #comments .commentbody  {
+		background-color: #F8F4E3;
+	}
+
+	#main #byline, #main #comments, #main #prev, #main #addcomment  {
+		background-color: #949396;
+	}
+
+#footer {
+	background-color: #DD6E42;
+}
